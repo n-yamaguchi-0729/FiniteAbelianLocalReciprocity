@@ -1,4 +1,4 @@
-# The finite abelian local reciprocity theorem in Lean 4.34.0
+# Local class field theory in Lean 4.34.0
 
 This repository is a thin submission interface for the finite norm-quotient
 form of local class field theory proved in

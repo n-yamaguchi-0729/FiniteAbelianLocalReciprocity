@@ -2,7 +2,7 @@
 version: v0.4
 
 project:
-  name: "The finite abelian local reciprocity theorem in Lean 4.34.0"
+  name: "Local class field theory in Lean 4.34.0"
   description: >-
     For every finite abelian extension L/K of a nonarchimedean local field,
     the multiplicative group K× modulo the field-norm subgroup N_{L/K}(L×)
