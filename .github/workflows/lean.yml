@@ -43,6 +43,6 @@ jobs:
       repository: ${{ github.repository }}
       commit: ${{ github.sha }}
       pipeline_commit: 3561d237dcc4b28482558ad28a64d767d7cc8615
-      request_id: lcftpreflight001
+      request_id: ci${{ github.run_id }}a${{ github.run_attempt }}
       mode: full
       options: '{"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}'
