@@ -50,9 +50,7 @@ builds `Challenge` and `Solution` together with their transitive import
 closures; it does not rerun the whole CFT library. Locally, run
 `lake exe cache get`, `lake build Challenge`, and
 `lake --no-ansi --wfail build Solution`. The Challenge build has one expected
-warning for its deliberate statement placeholder. Palomar independently runs
-Comparator, Lean kernel checking, and NanoDa replay for a submitted immutable
-commit.
+warning for its deliberate statement placeholder.
 
 Licensed under Apache-2.0. The human author and responsible maintainer is
 Naganori Yamaguchi (山口永悟).
