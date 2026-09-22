@@ -34,9 +34,6 @@ The substantive CFT library separately proves:
   uniqueness results, in
   [`ProfiniteLocalReciprocity.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/LocalClassFieldTheory/Infinite/ProfiniteLocalReciprocity.lean).
 
-Those results explain the scope of the underlying library; this Comparator
-configuration selects only the displayed finite norm-quotient theorem.
-
 ## Files and verification
 
 - `Challenge.lean`: the short Mathlib-only statement surface; its one `sorry`
@@ -52,5 +49,10 @@ closures; it does not rerun the whole CFT library. Locally, run
 `lake --no-ansi --wfail build Solution`. The Challenge build has one expected
 warning for its deliberate statement placeholder.
 
-Licensed under Apache-2.0. The human author and responsible maintainer is
-Naganori Yamaguchi (山口永悟).
+## Authorship and AI assistance
+
+GPT-6 Astra, via Codex, assisted with Lean development, statement review, and
+preparation of this submission interface. Naganori Yamaguchi (山口永悟) is the
+human author and responsible maintainer.
+
+Licensed under Apache-2.0.
