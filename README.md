@@ -30,11 +30,10 @@ The same CFT development also proves:
 - the local existence/classification theorem as an order isomorphism in
   [`FiniteAbelianLocalExistenceOrderIso.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalExistenceOrderIso.lean).
 
-## Verification and authorship
+The theorem placeholder in `Challenge.lean` is deliberate; `Solution.lean`
+imports the completed proof.
 
-The project uses Lean 4.34.0. CI builds the Challenge and Solution and checks
-the selected proof with Comparator, Lean's kernel, and NanoDa. The theorem
-placeholder in the Challenge is deliberate; the imported Solution is complete.
+## Authorship
 
 Astra GPT-6 Codex assisted with Lean development, statement review, and
 preparation of this submission interface. Naganori Yamaguchi (山口永悟) is the
