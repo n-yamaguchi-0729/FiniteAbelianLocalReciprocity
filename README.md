@@ -19,12 +19,6 @@ proved declaration from the pinned CFT commit.
 
 ## Scope and the rest of the CFT development
 
-This entry deliberately records the standard, compact finite quotient
-theorem rather than an artificial conjunction of every local result. The
-compared declaration does not itself select a Frobenius-normalized Artin map,
-assert compatibility in towers, classify all norm subgroups, or state the
-maximal-abelian/profinite form.
-
 The substantive CFT library separately proves:
 
 - a continuous surjective finite Artin map with field-norm kernel in
