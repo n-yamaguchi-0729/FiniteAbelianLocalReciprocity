@@ -30,6 +30,7 @@ The substantive CFT library separately proves:
   [`FiniteAbelianLocalReciprocityFamilyExt.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalReciprocityFamilyExt.lean);
 - the local existence/classification theorem as an order isomorphism in
   [`FiniteAbelianLocalExistenceOrderIso.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalExistenceOrderIso.lean);
+
 ## Files and verification
 
 - `Challenge.lean`: the short Mathlib-only statement surface; its one `sorry`
