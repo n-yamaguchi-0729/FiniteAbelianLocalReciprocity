@@ -29,7 +29,7 @@ The substantive CFT library separately proves:
 - uniqueness of the normalized coherent family in
   [`FiniteAbelianLocalReciprocityFamilyExt.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalReciprocityFamilyExt.lean);
 - the local existence/classification theorem as an order isomorphism in
-  [`FiniteAbelianLocalExistenceOrderIso.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalExistenceOrderIso.lean);
+  [`FiniteAbelianLocalExistenceOrderIso.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalExistenceOrderIso.lean).
 
 ## Files and verification
 
@@ -39,12 +39,14 @@ The substantive CFT library separately proves:
 - `comparator.json`: selects exactly one theorem.
 - `formalization.yaml`: provenance, scope, source, and automation metadata.
 
-The project uses Lean 4.34.0 and commits an exact dependency manifest. CI
-builds both modules and runs the official full mechanical preflight at a
-pinned revision. That check compares the declaration, audits its complete
-source closure, and replays the proof with both Lean's kernel and NanoDa. The
-one `sorry` in `Challenge.lean` is the deliberate statement placeholder;
-`Solution.lean` imports the completed proof.
+The project uses Lean 4.34.0 and commits an exact dependency manifest. CI is
+configured to build `Challenge` and `Solution` and run Palomar's full
+mechanical preflight at a pinned revision. The preflight verifies the
+Challenge's transitive import closure against the permitted canonical
+dependencies, checks the selected Solution declarations with Comparator, and
+replays the exported proofs with Lean's kernel and NanoDa. The one `sorry` in
+`Challenge.lean` is the deliberate statement placeholder; `Solution.lean`
+imports the completed proof.
 
 ## Authorship and AI assistance
 
