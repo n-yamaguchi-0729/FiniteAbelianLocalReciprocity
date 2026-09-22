@@ -30,10 +30,6 @@ The substantive CFT library separately proves:
   [`FiniteAbelianLocalReciprocityFamilyExt.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalReciprocityFamilyExt.lean);
 - the local existence/classification theorem as an order isomorphism in
   [`FiniteAbelianLocalExistenceOrderIso.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/Theorems/LocalClassFieldTheory/FiniteAbelianLocalExistenceOrderIso.lean);
-- a profinite completion form of reciprocity, together with compatibility and
-  uniqueness results, in
-  [`ProfiniteLocalReciprocity.lean`](https://github.com/n-yamaguchi-0729/ClassFieldTheory/blob/01b4614ee76fa6f50e7f3ea3e1cff93b85693345/Lean4/ClassFieldTheory/LocalClassFieldTheory/Infinite/ProfiniteLocalReciprocity.lean).
-
 ## Files and verification
 
 - `Challenge.lean`: the short Mathlib-only statement surface; its one `sorry`
@@ -42,16 +38,16 @@ The substantive CFT library separately proves:
 - `comparator.json`: selects exactly one theorem.
 - `formalization.yaml`: provenance, scope, source, and automation metadata.
 
-The project uses Lean 4.34.0 and commits an exact dependency manifest. The CI
-builds `Challenge` and `Solution` together with their transitive import
-closures; it does not rerun the whole CFT library. Locally, run
-`lake exe cache get`, `lake build Challenge`, and
-`lake --no-ansi --wfail build Solution`. The Challenge build has one expected
-warning for its deliberate statement placeholder.
+The project uses Lean 4.34.0 and commits an exact dependency manifest. CI
+builds both modules and runs the official full mechanical preflight at a
+pinned revision. That check compares the declaration, audits its complete
+source closure, and replays the proof with both Lean's kernel and NanoDa. The
+one `sorry` in `Challenge.lean` is the deliberate statement placeholder;
+`Solution.lean` imports the completed proof.
 
 ## Authorship and AI assistance
 
-GPT-6 Astra, via Codex, assisted with Lean development, statement review, and
+Astra GPT-6 Codex assisted with Lean development, statement review, and
 preparation of this submission interface. Naganori Yamaguchi (山口永悟) is the
 human author and responsible maintainer.
 

@@ -1,4 +1,4 @@
-name = "FiniteAbelianLocalReciprocity"
+name = "LocalClassFieldTheory"
 version = "0.1.0"
 defaultTargets = ["Challenge", "Solution"]
 

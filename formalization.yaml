@@ -9,8 +9,8 @@ project:
     is isomorphic as a topological group to Gal(L/K). The registered
     declaration is the finite norm-quotient form of local reciprocity proved
     in the pinned ClassFieldTheory development. Stronger compatibility,
-    normalization, existence, and profinite results in that development are
-    documented separately and are not part of the compared declaration.
+    normalization and existence results in that development are documented
+    separately and are not part of the compared declaration.
   authors: ["Naganori Yamaguchi"]
   responsible_maintainers: ["Naganori Yamaguchi"]
   license: "Apache-2.0"
@@ -52,27 +52,22 @@ status:
     continuous multiplicative equivalence with continuous inverse. It does
     not itself assert Frobenius normalization, tower or family compatibility,
     uniqueness of a normalized family, the local existence correspondence,
-    or the maximal-abelian/profinite theorem. Those are separate proved
-    declarations in the pinned substantive repository and are listed in the
-    README.
+    or the maximal-abelian/profinite theorem. The finite companion results
+    are separate proved declarations in the pinned substantive repository
+    and are listed in the README.
   sorry_count: 0
   sorry_in_definitions: 0
 
 automation:
   methods:
     - method: agent
-      models: ["GPT-6 Astra"]
+      models: ["Astra GPT-6 Codex"]
       framework: "Codex"
       tool_setup: >-
         AI-assisted Lean development and maintenance of the underlying CFT
         library, followed by source-level statement review and thin-wrapper
         preparation. Human authorship and responsibility remain with the
         named maintainer.
-  notes: >-
-    Historical prompts, usage shares, costs, and hardware were not retained
-    and are not reconstructed. The wrapper introduces no new proof: its
-    Solution imports the existing declaration at the pinned CFT commit.
-
 fidelity:
   divergences: >-
     The source presents the quotient isomorphism as induced by a uniquely
@@ -88,8 +83,7 @@ review:
   notes: >-
     The Challenge definitions and theorem type were compared with the pinned
     substantive source, and the statement was checked against the cited
-    mathematical reference. Mechanical Comparator and NanoDa verification is
-    performed separately by Palomar for the submitted immutable commit.
+    mathematical reference.
 
 alignment:
   namespace: "ClassFieldTheory"
